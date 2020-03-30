@@ -15,8 +15,6 @@
 % Template license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 %
-
-
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
@@ -24,24 +22,28 @@
 \documentclass[11pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=2.3cm, top=1.5cm, right=2.3cm, bottom=2.0cm, footskip=.5cm}
+%\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm, includehead} default margin sizes
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
 
 % Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-skyblue}
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+\definecolor{awesome-bluegrey}{HTML}{005fad}
+\definecolor{awesome-darkerbluegrey}{HTML}{004680}
+\colorlet{awesome}{awesome-darkerbluegrey} %section titles, locations, my title
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
 % \definecolor{darktext}{HTML}{414141}
 % \definecolor{text}{HTML}{333333}
 % \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
+\colorlet{lighttext}{awesome-red} %only used in header and footer
+\colorlet{darktext}{black} %main font titles
+\colorlet{graytext}{black} %alternate font subtitle, dates
+\colorlet{text}{black} %bullet points, title, contact info
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
@@ -59,21 +61,21 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{profile}
-\name{Junhao}{Dong}
+\name{Angela}{Burton}
 \position{Software Engineer}
 % \address{address}
 
-\mobile{(678) 343-1817}
-\email{junhao.dong96@gmail.com}
+\mobile{(301) 268-7932}
+\email{anjbur@protonmail.com}
 % \homepage{homepage}
-\github{junhaodong}
-\linkedin{junhaodong}
+\github{anjbur}
+%\linkedin{lanjbur/}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
 % \skype{skype-id}
 % \reddit{reddit-id}
-% \extrainfo{extra informations}
+ \extrainfo{linkedin.com/in/anjbur/}
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -86,7 +88,7 @@
 % Leave any of these blank if they are not needed
 % \makecvfooter
 %   {\today}
-%   {Junhao Dong~~~·~~~Résumé}
+%   {Angela Burton~~~·~~~Résumé}
 %   {\thepage}
 
 %-------------------------------------------------------------------------------
@@ -94,9 +96,10 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{resume/education.tex}
-\input{resume/skills.tex}
 \input{resume/experience.tex}
-\input{resume/projects.tex}
-
+\input{resume/skills.tex}
+\input{resume/presentation.tex}
+\input{resume/writing.tex}
+\input{resume/extracurricular.tex}
 %-------------------------------------------------------------------------------
 \end{document}
