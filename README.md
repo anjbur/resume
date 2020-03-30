@@ -1,1 +1,1 @@
-My resume! [PDF](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/junhaodong/resume/master/resume.pdf).
+My resume! [PDF](https://github.com/anjbur/resume/blob/master/resume.pdf).
